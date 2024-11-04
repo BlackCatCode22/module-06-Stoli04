@@ -9,11 +9,9 @@ class PartyAnimal:
         self.x = self.x + 1
         print(self.name, "party count", self.x)
 
-    def __del__(self):
-        print("I am destructed", self.x)
-
-
 s = PartyAnimal("Sally")
 s.party()
 j = PartyAnimal("Jim")
+
 j.party()
+s.party()
